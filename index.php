@@ -66,10 +66,4 @@ $app->get('/get/', function () use ($app)
     return false;
 });
 
-$app->get('/testo/', function () use ($app)
-{
-    file_get_contents('http://www.kuzeycaddesi.com/evisa/set/31');
-    return false;
-});
-
 $app->run();
