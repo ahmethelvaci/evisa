@@ -1,0 +1,11 @@
+scp evisa.tar.gz root@108.61.117.85:.
+sshfs root@108.61.117.85:/root/evisa/pdf/ /home/ahmet/pdf/
+
+
+apt-get install  php7.0-cli php7.0-common php7.0-curl php7.0-fpm php7.0-gd php7.0-json php7.0-mbstring php7.0-opcache php7.0-readline php7.0-xml php7.0-zip
+tar -zxvf evisa.tar.gz
+cd evisa
+nano index.php
+    // change SITE_URL
+php composer.phar update
+php -S 108.61.117.85:8080
